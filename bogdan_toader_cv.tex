@@ -1,0 +1,348 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.2 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins 0.75 default
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Bogdan} % Your first name
+\familyname{Toader} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+% \title{Curriculum Vitae}
+% \address{Balliol College, Broad Street}{Oxford, OX1 3BJ, United Kingdom}
+\address{St Anne’s College, 56 Woodstock Road}{Oxford, OX2 6HS, United Kingdom}
+
+\mobile{(+44) 07428072233}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{toader@maths.ox.ac.uk}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{https://people.maths.ox.ac.uk/toader/}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+% \vspace{-3em}
+
+
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Research Interests}
+My interests mostly relate to the numerical solution of differential equations. My current research focuses on preconditioning for iterative linear solvers, and more specifically the methods used in reservoir simulation. My broader interests include high performance and parallel computing, continuous optimization, and mathematical modelling.
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Research Summary}
+%My research is motivated by the need for fast and robust reservoir simulators for the oil and gas industry. I focus on the decoupling strategy used for the preconditioning in reservoir simulation.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2015--present}{DPhil Candidate in Mathematics}{University of Oxford}{Oxford, UK}{}{ Industrially Focused Mathematical Modelling (EPSRC Centre for Doctoral Training) in collaboration with the Schlumberger Abingdon Technology Centre (AbTC). \\ Expected end date: September 2019.
+}
+\smallitem[0em]{\textit{Thesis}}{Preconditioning for Reservoir Simulation}%
+\smallitem{\textit{Supervisor}}{Prof. Andy Wathen}%
+%\smallitem{\textit{Company Supervisors}}{Tom J\"onsth\"ovel, Chris Aselmann-Lemon and Dayal Gunasekera}%
+
+
+%{%
+%\begin{itemize}
+%\item Mini-Project 1: \textit{Algebraic Decoupling of Pressure Equation in Reservoir Simulation}
+%\begin{itemize}
+%\item Company Supervisors: Tom J\"{o}nsth\"{o}vel, Christopher Lemon, Schlumberger
+%\item Academic Supervisor: Andrew Wathen, Professor, University of Oxford
+%\end{itemize}
+%\item Mini-Project 2: \textit{Choosing a fast initial propagator for rapid convergence of the parareal algorithm in the context of simple model problems}
+%\begin{itemize}
+%\item Company Supervisor: Debasmita Samaddar, Culham Centre for Fusion Energy
+%\item Academic Supervisor: Andrew Wathen, Professor, University of Oxford
+%\end{itemize}
+%\end{itemize}
+%}  % Arguments not required can be left empty
+\cventry{2013--2015}{Masters of Science in Mathematics}{University of Ottawa}{Ottawa, Canada}{}{}
+\smallitem[0em]{\textit{Thesis}}{Time-Stepping Methods in Cardiac Electrophysiology}%
+\smallitem{\textit{Supervisor}}{Prof. Yves Bourgault}%
+\cventry{2010--2013}{Honours Bsc with Specialization in Mathematics}{University of Ottawa}{Ottawa, Canada}{\textit{GPA -- 9.3}}{}
+\cventry{2012}{Student Exchange}{Korea University}{Seoul, South Korea}{\textit{GPA -- 9.3}}{One semester international student exchange.}
+\cventry{2008--2010}{Dipl\^{o}me d'\'{E}tudes Coll\'{e}giales (DEC) in Natural Sciences}{C\'{e}gep de l'Outaouais}{Gatineau, Canada}{}{}
+%\section{Masters Thesis}
+%
+%\cvitem{Title}{\emph{Time-Stepping Methods in Cardiac Electrophysiology}}
+%\cvitem{Supervisor}{Prof. Yves Bourgault}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Research Experience}
+
+
+\cventry{2016}{Research Mini-Project}{Culham Centre for Fusion Energy}{Abingdon, UK}{}{Completed a 10-week project as part of DPhil program.}
+\smallitem[0em]{\textit{Project}}{Choosing a fast initial propagator for rapid convergence of the parareal algorithm in the context of simple model problems}
+\smallitem{\textit{Supervisors}}{Prof. Andy Wathen, Debasmita Samaddar}%
+
+%------------------------------------------------
+\cventry{2016}{Research Mini-Project}{Schlumberger Abingdon Technology Centre (AbTC)}{Abingdon, UK}{}{Completed a 10-week project as part of DPhil program.}
+\smallitem[0em]{\textit{Project}}{Algebraic Decoupling of Pressure Equation in Reservoir Simulation}
+\smallitem{\textit{Supervisors}}{Prof. Andy Wathen, Tom J\"{o}nsth\"{o}vel, Christopher Lemon}%
+
+%------------------------------------------------
+
+\cventry{2014}{Research Internship}{French Institute for Research in Computer Science and Automation (INRIA)}{Bordeaux, France}{}{Completed a two-month research internship as part of my masters' research.}
+\smallitem{\textit{Supervisor}}{Prof. Yves Coudi\`{e}re}%
+
+%------------------------------------------------
+
+\cventry{2012}{Summer Research Project}{University of Ottawa}{Ottawa, Canada}{}{Funded by the Natural Sciences and Engineering Research Council of Canada.}
+\smallitem[0em]{\textit{Project}}{The Stable Limit Theorem and its Applications}
+\smallitem{\textit{Supervisor}}{Prof. Raluca Balan}%
+
+
+\section{Teaching Experience}
+\cventry{2017--2018}{Class Tutor}{University of Oxford}{Oxford, UK}{}{Prepared and taught practical classes. In charge of teaching assistant.
+}
+\smallitem{Winter 2018}{Finite Element Method for PDEs}
+\smallitem{Fall 2017}{Numerical Linear Algebra}
+
+%-------------------------------------------
+
+\cventry{2016--2017}{Teaching Assistant}{University of Oxford}{Oxford, UK}{}{Marked problem sheets and presented problems during classes.
+}
+\smallitem{Winter 2017}{Finite Element Method for PDEs}
+\smallitem{Fall 2016}{Numerical Solution of Differential Equations I} %{MT2016}
+
+
+%------------------------------------------------
+\cventry{2011--2015}{Teaching Assistant}{University of Ottawa}{Ottawa, Canada}{}{Prepared and delivered course material for classes, marked assignments and exams, was consultant at the Math Help Centre.%, where students from multiple mathematics classes may ask questions.
+}
+\smallitem{2013--2015}{Math Help Centre (tutoring)}
+\smallitem{Winter 2014}{Calculus II (teaching)}
+\smallitem{Fall 2013}{Introduction to Calculus and Vectors (teaching)}
+\smallitem{}{Calculus for Life Sciences I (teaching)}
+\smallitem{Winter 2013}{Calculus for Life Sciences II (teaching and marking)}
+\smallitem{Winter 2012}{Calculus I (marking)}
+\smallitem{}{Mathematical methods II (marking)}
+\smallitem{}{Calculus II (marking)}
+\smallitem{}{Calculus for Life Sciences II (marking)}
+\smallitem{Fall 2011}{Calculus for Life Sciences I (teaching)}
+
+%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	OTHER WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+% \section{Other Work Experience}
+% % \cvitem{2015}{Communications Intern}{uOttawa International Office}{Ottawa, Canada}{}{PerfSummer Experience Program}
+% \cventry{2011}{Office Administrator}{Evolutel-JLDR}{Gatineau, Canada}{}{Contacted customers to update their contact information, provided support to accounts receivable process}
+% \cventry{
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2015}{Doctoral Research Scholarship - Fonds de recherche du Qu\'{e}bec Nature et technologies (FRQNT) (declined)}
+\cvitem{2013--2015}{Masters Admission Scholarship - University of Ottawa}
+\cvitem{2012--2013}{Linis Mathematics Scholarship (twice awarded) - University of Ottawa, Department of Mathematics and Statistics}
+\cvitem{2010--2013}{Canada's French University Scholarship - University of Ottawa}
+\cvitem{2012}{Student Mobility Scholarship - University of Ottawa, International Office}
+\cvitem{2012}{Undergraduate Student Research Award (USRA) - Natural Sciences and Engineering Research Council of Canada (NSERC)}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Conferences and Seminars}
+\section{Selected Presentations}
+\cvitem{2018}{\textit{Preconditioners for Non-Isothermal Flow Through Porous Media}, 15th Copper Mountain Conference On
+Iterative Methods, Copper Mountain, USA, Colorado}
+\cvitem{2017}{\textit{Preconditioning for Reservoir Simulation}, 27th Biennial Numerical Analysis Conference, University of Strathclyde, Glasgow, UK}
+\cvitem{2017}{\textit{Numerical Methods and Preconditioning for Reservoir Simulation}, Junior Applied Mathematics Seminar, Mathematical Institute, University of Oxford, Oxford, UK}
+\cvitem{2015}{\textit{Time-Stepping Methods in Cardiac Electrophysiology}, Applied Mathematics, Modeling and Computational Science (AMMCS) and Canadian Applied and Industrial Mathematics Society (CAIMS) Conference, Wilfrid Laurier University, Waterloo, Canada}
+\cvitem{2013}{\textit{The Stable Limit Theorem and its Applications}, Probability and Statistics Seminar, Department of Mathematics and Statistics, University of Ottawa, Ottawa, Canada}
+
+%----------------------------------------------------------------------------------------
+% \section{Other Academic Events attended}
+% \cvitem{2018}{European Study Group with Industry (ESGI137), Norwegian University of Science and Technology (NTNU), \r{A}lesund, Norway}
+% \cvitem{2018}{New directions in applied linear algebra, numerical methods for PDEs, and applications, International Centre for Mathematical Sciences (ICMS), Edinburgh, UK}
+% \cvitem{2017}{European Study Group with Industry (ESGI130), University of Warwick, Coventry, UK}
+% \cvitem{2017}{International Conference on Preconditioning Techniques for Scientific and Industrial Applications, University of British Columbia, Vancouver, Canada}
+% \cvitem{2017}{SIAM Student Chapter annual conference, University of Oxford, Oxford, UK}
+% \cvitem{2017}{Long Program on Computational Issues in Oil Field Applications, Institute of Pure and Applied Mathematics (IPAM), Los Angeles, California, USA}
+% \cvitem{2016}{European Study Group with Industry (ESGI116), University of Durham, Durham, UK}
+% \cvitem{2016}{InFoMM Graduate Modelling Camp, University of Oxford, Oxford, UK}
+% \cvitem{2014}{Ottawa Mathematics Conference, University of Ottawa, Ottawa, Canada}
+
+%-----------------------------------------------------
+\section{Minisymposium Organization}
+\cvitem{2019}{\textit{Solvers for Petroleum Reservoir Simulation}, SIAM Conference on Mathematical \& Computational Issues in the Geosciences (GS19), Houston, Texas, USA}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\cvitem{Basic}{\textsc{C}, \textsc{C++}, \textsc{Fortran}, \textsc{PETSc}} 
+\cvitem{Intermediate}{ \textsc{Firedrake}, \textsc{MPI}}
+\cvitem{Advanced}{\LaTeX, \textsc{Matlab}, \textsc{Python}}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Publications}
+
+\textbf{Articles submitted to peer-reviewed journals}
+
+T.~Roy, Y.~Bourgault and C.~Pierre.
+\newblock Analysis of time-stepping methods for the monodomain model.
+\newblock Submitted to {\em Computational and Applied Mathematics}, November, 2017.
+\vspace{0.5em}
+
+\textbf{Technical Reports}
+
+T.~Roy.
+\newblock Algebraic Decoupling of Pressure Equation in Reservoir Simulation.
+\newblock Technical report in collaboration with the Schlumberger Abingdon Technology Centre, 25 pages, 2016.
+
+\vspace{0.5em}
+
+T.~Roy.
+\newblock Choosing a fast initial propagator for rapid convergence of the parareal algorithm in the context of simple model problems.
+\newblock Technical report in collaboration with the Culham Centre for Fusion Energy, 26 pages, 2016.
+
+\vspace{0.5em}
+
+\textbf{European Study Group for the Industry (ESGI) reports}
+
+H.~Hanche-Olsen, T.~Petzold, I.~Roper, T.~Roy, C.~Veje.
+\newblock Non-isothermal induction tempering problem.
+\newblock Study group report as part of ESGI137 with EFD Induction, 10 pages, 2018.
+
+\vspace{0.5em}
+
+S.~Baker, H.A.~Batarfi, L.~Church, M.~Dolniak, M.J.~Groves, P.J.~Hjorth, A.~Nixon, K.~Piwarska, B.~Pooley, I.~Roper, T.~Roy, M.~Zyskin.
+\newblock How Do We Mitigate Against a Marauding Terrorist?
+\newblock Study group report as part of ESGI30 with the Home Office Centre for Applied Science and Technology, 2017.
+
+\vspace{0.5em}
+
+N.~Bootland, F.~Brosa Planella, J.~Christmas, D.~Lunz, J.~Dewynne, N.~Fadai, A.~Gower, P.~Hicks, V.~Kovalchuk, A.~Lacey, M.-L.~Lackner, S.~Lee, J.~Ockendon, V.~Pereira, B.~Piette, R.~Purvis, T.~Roy, T.~Spelman, R.~Timms.
+\newblock Automatic Optimised Design of Umbilicals.
+\newblock Study group report as part of ESGI116 with Technip Umbilicals Ltd, 60 pages, 2016.
+
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEERING EXPERIENCE
+%----------------------------------------------------------------------------------------
+% 
+% \section{Community Involvement and Volunteer Experience}
+% 
+% \cvitem{2018}{Organized and delivered Science Outreach at Desborough College}
+% \cvitem{2008-2015}{Volunteered for the Lost Children Service at the Winter Festival }
+% \cvitem{2014}{Volunteered for the [free-them] Freedom Walk in Ottawa}
+% \cvitem{2013}{Volunteered at the International Exchange Fair at the University of Ottawa}
+% \cvitem{2009-2013}{Standardized patient for the degree in sports medicine}
+% \cvitem{2012}{Organized the Canada booth at the International Student Fair at Korea University}
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Languages}
+% \cvitem{Fluent}{English, French}
+% \cvitem{Beginner}{German, Spanish}
+%
+%\cvitemwithcomment{English}{Mothertongue}{}
+%\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Personal Interests}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
